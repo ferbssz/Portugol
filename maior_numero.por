@@ -3,25 +3,33 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro num
-		escreva("Digita um número: ")
-		leia(num)
 		inteiro num1
 		escreva("Digita um número: ")
 		leia(num1)
 		inteiro num2
 		escreva("Digita um número: ")
 		leia(num2)
+		inteiro num3
+		escreva("Digita um número: ")
+		leia(num3)
 		
-		se(num>num1) e (num>num2){
-			escreva("O maior numero é: \n", num)
-		}
-		senao{
-			se(num1>num) ou (num1>num2){
-			escreva("O maior numero é: \n", num1)
-			}
-		senao
-		escreva("O maior numero é: \n", num2)
+
+  se ((num1>num2) e (num1>num3)){     
+
+escreva ("Maior valor é ", num1)      
+  }
+senao{
+se ((num2>num1) e (num2 > num3)){   
+
+escreva("Maior valor é ",num2)}
+
+senao {
+se ((num3>num2) e (num3>num1))  
+
+escreva("Maior valor é ", num3)     
+
+
+
 			}
 		}
 	}
@@ -31,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 240; 
+ * @POSICAO-CURSOR = 221; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
